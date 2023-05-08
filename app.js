@@ -18,20 +18,20 @@
 let express=require("express");
 let app=express();
 
-let mysql=require("mysql");
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database:"framework"
-  });
+// let mysql=require("mysql");
+// var con = mysql.createConnection({
+//     host: "localhost",
+//     user: "root",
+//     password: "",
+//     database:"framework"
+//   });
   
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    /*Create a database named "mydb":*/
+//   con.connect(function(err) {
+//     if (err) throw err;
+//     console.log("Connected!");
+//     /*Create a database named "mydb":*/
    
-  });
+//   });
   
 app.listen(3000,()=>console.log("server strat.."));
 app.use(express.urlencoded({extended:true}));
